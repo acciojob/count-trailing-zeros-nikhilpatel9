@@ -1,9 +1,11 @@
 function trailingZeros(n) {
-	let count=0;
-  //  for (let i = 5; i <= n; i *= 5) {
-        count += Math.floor(n / i);
-    }
-    return count;
+  //your JS code here. If required.
+	let cnt=0;
+	while(n>0){
+		cnt++;
+		n-=5;
+	}
+ return cnt;
 }
 const input = prompt("Enter a number");
 alert(trailingZeros(input));
